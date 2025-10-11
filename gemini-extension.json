@@ -9,5 +9,6 @@
     }
   },
   "contextFileName": "GEMINI.md",
-  "description": "Get notified by your Gemini CLI. Enable Gemini CLI to play precise audible notifications that signal task completion, user confirmation prompts, and long-running operation finishes."
+  "description": "Get notified by your Gemini CLI. Enable Gemini CLI to play precise audible notifications that signal task completion, user confirmation prompts, and long-running operation finishes.",
+  "excludeTools": ["run_shell_command"]
 }
