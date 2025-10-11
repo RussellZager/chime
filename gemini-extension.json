@@ -7,5 +7,6 @@
       "args": ["${extensionPath}${/}dist${/}chime.js"],
       "cwd": "${extensionPath}"
     }
-  }
+  },
+  "contextFileName": "GEMINI.md"
 }
