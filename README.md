@@ -10,6 +10,16 @@ Install the Chime extension by running the following command from your terminal:
 gemini extensions install https://github.com/rebekahx23/chime
 ```
 
+# latest from default branch (e.g., main)
+```
+gemini extensions install rebekahx23/chime
+```
+
+# OR pin to your tagged release
+```
+gemini extensions install rebekahx23/chime --ref v0.1.5
+```
+
 Install Gemini CLI to try it out [Gemini CLI installation instructions](https://github.com/google-gemini/gemini-cli/blob/main/README.md#installation).
 
 This extension provides a `chimee` tool that plays a simple completion chime. This is used to notify you when Gemini has finished a task, is waiting for your input, or has completed a long-running operation.
