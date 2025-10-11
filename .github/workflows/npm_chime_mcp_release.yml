@@ -1,4 +1,4 @@
-name: Release Extension
+name: Release Extension for Chime NPM Release
 
 on:
   push:
