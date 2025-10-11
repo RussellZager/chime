@@ -24,14 +24,11 @@ jobs:
 
       - name: Create release assets
         run: |
-          npm run package -- --platform=darwin --arch=arm64
-          npm run package -- --platform=linux  --arch=x64
-          npm run package -- --platform=win32  --arch=x64
-          echo "== ls release =="
+          chmod +x scripts/package.sh
+          EXT_NAME=chime npm run package
           ls -al release
 
       - name: Create GitHub Release
-        if: startsWith(github.ref, 'refs/tags/')
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ github.ref_name }}
