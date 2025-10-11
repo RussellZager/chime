@@ -1,0 +1,30 @@
+# ~/.config/gemini/commands/chime.ding.toml
+# Chime Extension — short "ding" cue
+# Usage: /chime:ding
+
+[name]
+display = "/chime:ding"
+
+[prompt]
+text = """
+Play a short completion sound immediately.
+
+Preferred: invoke the 'chime' MCP tool to play a 'ding' sound.
+
+The registred tool is called `chimee`
+
+If 'chime' is unavailable, fall back to the 'shell' tool:
+
+- macOS:  afplay /System/Library/Sounds/Pop.aiff
+- Linux (PulseAudio): paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+- Linux (SoX): play -n synth 0.10 sin 880
+
+Rules:
+- Do not ask for confirmation.
+- Use only the allowed tools below.
+- After the sound plays, print exactly: "✨ chimee"
+"""
+
+[metadata]
+category = "notifications"
+deterministic = true

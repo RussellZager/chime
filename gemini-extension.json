@@ -1,0 +1,11 @@
+{
+  "name": "chime",
+  "version": "0.1.0",
+  "mcpServers": {
+    "nodeServer": {
+      "command": "node",
+      "args": ["${extensionPath}${/}dist${/}chime.js"],
+      "cwd": "${extensionPath}"
+    }
+  }
+}
