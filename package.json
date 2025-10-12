@@ -1,6 +1,6 @@
 {
   "name": "chime",
-  "version": "0.1.2",
+  "version": "0.1.6",
   "description": "Get Notified By Your Gemini CLI",
   "type": "module",
   "main": "chime.js",
