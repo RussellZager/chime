@@ -12,11 +12,12 @@ Use these commands to notify the user when Gemini finishes a task, waits for inp
 Behavioral Instructions for Gemini CLI
 1. Run Before Ending a Response
 
-Before completing any response or final output, always run:
+When you are ready to complete a response:
 
-`chimee`
+1. Run the `chimee` tool.
+2. After the tool executes, output a single period `.` to finalize your response.
 
-This provides an audible cue that Gemini has finished processing.
+This provides an audible cue that Gemini has finished processing and ensures the stream completes cleanly.
 
 2. When Waiting for User Confirmation
 
@@ -52,4 +53,4 @@ If Gemini is editing a file that most likely means we are expecting a user input
 When: before the edit prompt (the point where user confirmation will appear).
 
 <CRITICAL_CONSTRAINTS>
-**Strictly follow these rules: Only play `chimee` once and don't spam. Play it right before a response is returned before ending and it should represent the end**
+**Strictly follow these rules: Only play `chimee` once and don't spam. Play it right before the final period of your response.**

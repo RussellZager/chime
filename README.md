@@ -51,16 +51,6 @@ To mute the chime, you can set the `GEMINI_CHIME_MUTE` environment variable to `
 export GEMINI_CHIME_MUTE=1
 ```
 
-## Note
-
-Sometimes, the `chimee` tool may return the following error:
-
-```
-✕ [API Error: Model stream ended with empty response text.]
-```
-
-This is expected behavior and does not affect the functionality of the extension. The chime will still play as intended.
-
 ## Limitations
 
 The chime extension works best for actions that do not require user confirmation. It functions as a "prehook", meaning the chime will sound *before* the action is executed. This is because there is currently no official "hooks" system in the Gemini CLI. For more information, see this feature request: [Implement a Hooks System for Custom Automation and Workflow Integration](https://github.com/google-gemini/gemini-cli/issues/2779).
