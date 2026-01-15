@@ -7,12 +7,12 @@ Get audible notifications from your Gemini CLI.
 Install the Chime extension by running the following command from your terminal:
 
 ```
-gemini extensions install https://github.com/rebekahx23/chime
+gemini extensions install https://github.com/RussellZager/chime
 ```
 
 # OR pin to your tagged release
 ```
-gemini extensions install https://github.com/rebekahx23/chime --ref v0.1.6
+gemini extensions install https://github.com/RussellZager/chime --ref v0.1.7
 ```
 
 Install Gemini CLI to try it out [Gemini CLI installation instructions](https://github.com/google-gemini/gemini-cli/blob/main/README.md#installation).
@@ -36,12 +36,12 @@ Gemini will automatically play a chime to notify you of certain events:
 You can manually trigger a chime by using the following command:
 
 ```
-/chime:ding
+/chime
 ```
 
 or
 
-add `chimee` after your prompt to trigger the chime sound. 
+add `chimee` after your prompt to trigger the chime sound.
 
 ## Muting the Chime
 
@@ -50,16 +50,6 @@ To mute the chime, you can set the `GEMINI_CHIME_MUTE` environment variable to `
 ```
 export GEMINI_CHIME_MUTE=1
 ```
-
-## Note
-
-Sometimes, the `chimee` tool may return the following error:
-
-```
-✕ [API Error: Model stream ended with empty response text.]
-```
-
-This is expected behavior and does not affect the functionality of the extension. The chime will still play as intended.
 
 ## Limitations
 

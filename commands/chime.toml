@@ -1,9 +1,9 @@
-# ~/.config/gemini/commands/chimee.toml
-# Chime Extension — short "chimee" cue
-# Usage: /chimee
+# ~/.config/gemini/commands/chime.toml
+# Chime Extension — short "chime" cue
+# Usage: /chime
 
 [name]
-display = "/chimee"
+display = "/chime"
 
 [prompt]
 text = """
@@ -11,12 +11,12 @@ Play a short completion sound immediately.
 
 Preferred: invoke the 'chime' MCP tool to play a 'ding' sound.
 
-The registred tool is called `chimee`
+The registered tool is called `chimee`
 
 Rules:
 - Do not ask for confirmation.
 - Use only the allowed tools below.
-- After the sound plays, print exactly: "✨ chimee"
+- After the sound plays, print exactly: "✨ chime"
 """
 
 [metadata]
