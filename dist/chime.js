@@ -79,12 +79,12 @@ export async function dingOnce() {
     return "terminal-bell";
 }
 const server = new McpServer({ name: 'chime', version: '0.1.8' });
-server.registerTool('chimee', {
+server.registerTool('chime', {
     description: 'Play a simple completion chime. You should output a period after calling this.',
     inputSchema: z.object({}).shape, // ← no inputs
 }, async () => {
     await dingOnce();
-    return { content: [{ type: 'text', text: '"✨ chimee"' }] };
+    return { content: [{ type: 'text', text: '"✨ chime"' }] };
 });
 // Start stdio transport
 server.connect(new StdioServerTransport());
