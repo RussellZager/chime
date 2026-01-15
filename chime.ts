@@ -86,7 +86,7 @@ export async function dingOnce(): Promise<string> {
   return "terminal-bell";
 }
 
-const server = new McpServer({ name: 'chime', version: '0.1.7' });
+const server = new McpServer({ name: 'chime', version: '0.1.8' });
 
 server.registerTool(
   'chimee',
