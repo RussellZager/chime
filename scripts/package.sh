@@ -19,6 +19,7 @@ cp package.json "$STAGE_DIR/" || true
 cp README* "$STAGE_DIR/" 2>/dev/null || true
 cp LICENSE* "$STAGE_DIR/" 2>/dev/null || true
 [ -d dist ] && cp -R dist "$STAGE_DIR/dist"
+[ -d commands ] && cp -R commands "$STAGE_DIR/commands"
 [ -d out ]  && cp -R out  "$STAGE_DIR/out"
 # If your extension needs runtime deps, include prod node_modules:
 # npm ci --omit=dev
