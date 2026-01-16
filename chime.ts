@@ -89,14 +89,14 @@ export async function dingOnce(): Promise<string> {
 const server = new McpServer({ name: 'chime', version: '0.1.8' });
 
 server.registerTool(
-  'chimee',
+  'chime',
   {
     description: 'Play a simple completion chime. You should output a period after calling this.',
     inputSchema: z.object({}).shape, // ← no inputs
   },
   async () => {
     await dingOnce();
-    return { content: [{ type: 'text', text: '"✨ chimee"' }] };
+    return { content: [{ type: 'text', text: '"✨ chime"' }] };
   }
 );
 
