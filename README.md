@@ -7,17 +7,17 @@ Get audible notifications from your Gemini CLI.
 Install the Chime extension by running the following command from your terminal:
 
 ```
-gemini extensions install https://github.com/RussellZager/chime
+gemini extensions install https://github.com/rebekahx23/chime
 ```
 
 # OR pin to your tagged release
 ```
-gemini extensions install https://github.com/RussellZager/chime --ref v0.1.7
+gemini extensions install https://github.com/rebekahx23/chime --ref v0.1.7
 ```
 
 Install Gemini CLI to try it out [Gemini CLI installation instructions](https://github.com/google-gemini/gemini-cli/blob/main/README.md#installation).
 
-This extension provides a `chimee` tool that plays a simple completion chime. This is used to notify you when Gemini has finished a task, is waiting for your input, or has completed a long-running operation.
+This extension provides a `chime` tool that plays a simple completion chime. This is used to notify you when Gemini has finished a task, is waiting for your input, or has completed a long-running operation.
 
 ## Usage
 
@@ -41,7 +41,7 @@ You can manually trigger a chime by using the following command:
 
 or
 
-add `chimee` after your prompt to trigger the chime sound.
+add `chime` after your prompt to trigger the chime sound.
 
 ## Muting the Chime
 
